@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Alata", sans-serif;
+}
+html {
+  background: #fff8e8;
+  color: #002642;
+}
+a {
+  color: #002642;
+  text-decoration: none;
+}
+.header {
+  display: flex;
+  font-size: 1.7em;
+}
+.splash {
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 3em;
+}
+.splash h1 {
+  font-size: 4em;
+  font-weight: 900;
+}
+.splash p {
+  font-size: 1.7em;
+  font-weight: lighter;
+}
+.projects {
+  margin-left: 3em;
+  margin-right: 3em;
+  font-weight: 900;
+}
+.skills {
+  margin-left: 3em;
+  margin-right: 3em;
+  font-weight: 900;
+}
+.skillBoxContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.skillBox {
+  margin: 1.5em;
+}
+.contactMe {
+  margin-left: 3em;
+}
+.contactBoxContainer {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.contactBox {
+  margin-right: 2em;
+  margin-bottom: 2em;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #002642;
+  color: #fff;
+}
+.contactBox:hover {
+  background: #fff8e8;
+  color: #002642;
+  border: 1px solid #002642;
+}
