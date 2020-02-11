@@ -4,23 +4,42 @@
   font-family: "Alata", sans-serif;
 }
 html {
-  background: #fff8e8;
-  color: #002642;
+  background: #3c3744;
+  color: #ebf5ee;
+  text-align: center;
 }
 a {
-  color: #002642;
+  color: #ebf5ee;
   text-decoration: none;
 }
 .header {
   display: flex;
-  font-size: 1.7em;
+  font-size: 3em;
+  margin-top: 1rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  justify-content: space-between;
+}
+#headerButton {
+  background: #ebf5ee;
+  color: #3c3744;
+  padding: 0rem 1rem;
+}
+#headerButton:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 10px 10px 0 0 #222;
 }
 .splash {
-  margin-top: 4em;
+  background: #222;
+  height: 60vh;
+  margin-top: 1em;
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 3em;
+  padding: 3rem;
+}
+.splash h1 {
+  margin-top: 10rem;
 }
 .splash h1 {
   font-size: 4em;
@@ -29,15 +48,40 @@ a {
 .splash p {
   font-size: 1.7em;
   font-weight: lighter;
+  margin-left: 20rem;
+  margin-right: 20rem;
 }
 .projects {
-  margin-left: 3em;
-  margin-right: 3em;
   font-weight: 900;
 }
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+}
+.projectContainer {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.projectContainer:nth-child(2) {
+  flex-direction: row-reverse;
+}
+.projectIMG {
+  height: 30rem;
+  width: 30rem;
+  border: 5px solid #000;
+  transition: transform 100ms ease, box-shadow 100ms ease;
+}
+.projectIMG:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 10px 10px 0 0 #222;
+}
 .skills {
-  margin-left: 3em;
-  margin-right: 3em;
+  background: #222;
+  margin: 2rem 0;
+  padding-top: 1rem;
+  padding-left: 3em;
+  padding-right: 3em;
   font-weight: 900;
 }
 .skillBoxContainer {
@@ -58,19 +102,22 @@ a {
   justify-content: flex-start;
   flex-wrap: wrap;
 }
-.contactBox {
+.contactBoxContainer a {
   margin-right: 2em;
   margin-bottom: 2em;
+}
+.contactBox {
   width: 150px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background: #002642;
-  color: #fff;
+  background: #000;
+  color: #ebf5ee;
+  border: 1px solid #000;
 }
 .contactBox:hover {
-  background: #fff8e8;
-  color: #002642;
-  border: 1px solid #002642;
+  background: #ebf5ee;
+  color: #000;
+  border: 1px solid #000;
 }

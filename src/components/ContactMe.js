@@ -12,7 +12,7 @@ function ContactMe() {
     );
   }
   return (
-    <div className="contactMe">
+    <div className="contactMe" id="contact">
       <h1>Contact Me</h1>
       <div className="contactBoxContainer">
         {contactBox(
