@@ -1,6 +1,8 @@
-// variables
-$cool_gray: #3c3744;
-$off_white: #ebf5ee;
+// variables - https://coolors.co/222222-f87060-e3a49b-cdd7d6
+$eerie: #222222;
+$bitter: #f87060;
+$pastel: rgba(227, 164, 155, 0.5);
+$light: #cdd7d6;
 // widespread rules
 * {
   margin: 0;
@@ -8,14 +10,14 @@ $off_white: #ebf5ee;
   font-family: "Alata", sans-serif;
 }
 html {
-  background: $cool_gray;
-  color: $off_white;
+  background: $eerie;
+  color: $light;
   text-align: center;
 }
 a {
-  color: #ebf5ee;
   text-decoration: none;
 }
+// components
 .header {
   display: flex;
   font-size: 3em;
@@ -24,18 +26,18 @@ a {
   margin-right: 10rem;
   justify-content: right;
   #headerButton {
-    background: #ebf5ee;
+    border: 1px solid $eerie;
+    background: $pastel;
     font-size: 0.5em;
-    color: #3c3744;
+    color: $eerie;
     padding: 0rem 1rem;
     &:hover {
-      transform: translate(-4px, -4px);
-      box-shadow: 10px 10px 0 0 #222;
+      transform: translate(-2px, -2px);
+      box-shadow: 10px 10px 5px $pastel;
     }
   }
 }
 .splash {
-  background: #222;
   height: 60vh;
   margin-top: 1em;
   display: flex;
@@ -71,22 +73,23 @@ a {
   .projectIMG {
     height: 30rem;
     width: 30rem;
-    border: 5px solid #000;
+
     transition: transform 100ms ease, box-shadow 100ms ease;
     &:hover {
-      transform: translate(-4px, -4px);
-      box-shadow: 10px 10px 0 0 #222;
+      transform: translate(-2px, -2px);
+      box-shadow: 10px 10px 5px $pastel;
     }
   }
 }
 .skills {
-  background: #222;
+  background: $eerie;
   margin: 2rem 0;
   padding-top: 1rem;
   padding-left: 3em;
   padding-right: 3em;
   font-weight: 900;
   .skillBoxContainer {
+    color: $pastel;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -97,13 +100,13 @@ a {
     }
   }
 }
-
 .contactMe {
   margin-left: 3em;
 }
 .contactBoxContainer {
+  margin-top: 2em;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .contactBoxContainer a {
@@ -116,12 +119,11 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background: #000;
-  color: #ebf5ee;
-  border: 1px solid #000;
-}
-.contactBox:hover {
-  background: #ebf5ee;
-  color: #000;
-  border: 1px solid #000;
+  background: $pastel;
+  color: $eerie;
+  border: 1px solid $eerie;
+  &:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 10px 10px 5px $pastel;
+  }
 }
